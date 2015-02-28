@@ -873,6 +873,59 @@ footer a:hover {
   }
 }
 
+/*********CUSTOM CSS ******************/
+.tabs {
+width:100%;
+display:inline-block;
+}
+/*----- Tab Links -----*/
+.tab-links:after {
+display:block;
+clear:both;
+content:'';
+}
+.tab-links li {
+margin-right: 5px;
+float:left;
+list-style:none;
+}
+.tab-links a {
+padding:9px 15px;
+display:inline-block;
+border-radius:3px 3px 0px 0px;
+background:#98CBFF;
+font-size:16px;
+font-weight:600;
+color:#000000;
+transition:all linear 0.15s;
+}
+.tab-links a:hover {
+background:#3399FF;
+text-decoration:none;
+}
+li.active a, li.active a:hover {
+background:#2E8AE6;
+color:#000000;
+}
+/*----- Content of Tabs -----*/
+.tab-content {
+padding:15px;
+border-radius:3px;
+box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+background:#98CBFF;
+}
+.tab {
+display:none;
+}
+.tab.active {
+display:block;
+}
+
+p{
+  color: #000000;
+}
+
+
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) { }
 
