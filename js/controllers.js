@@ -1,5 +1,4 @@
 angular.module("portfolio.controllers", [])
-<<<<<<< HEAD
     .controller("landingController", ["$scope", "$route", "$routeParams", "$location", function($scope, $route, $routeParams, $location) {
         $scope.message = "index";
         
@@ -14,15 +13,5 @@ angular.module("portfolio.controllers", [])
     .controller("contactController", ["$scope", "$routeParams", function($scope, $routeParams) {
         $scope.message = "contact";
         this.params = $routeParams;
-=======
-    .controller("landingController", ["$scope", function($scope) {
-        $scope.message = "index";
-    }])
-    .controller("portfolioController", ["$scope", function($scope) {
-        $scope.message = "portfolio";
-    }])
-    .controller("contactController", ["$scope", function($scope) {
-        $scope.message = "contact";
->>>>>>> origin/master
     }])
 ;
