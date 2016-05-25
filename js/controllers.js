@@ -1,11 +1,11 @@
-angular.module("portfolio.controllers", [])
-    .controller("landingController", ["$scope",, function($scope) {
-        $scope.message = "index";
+angular.module('portfolio.controllers', [])
+    .controller('landingController', ['$scope', function($scope) {
+        $scope.message = 'index';
     }])
-    .controller("portfolioController", ["$scope", function($scope) {
-        $scope.message = "portfolio";
+    .controller('portfolioController', ['$scope', function($scope) {
+        $scope.message = 'portfolio';
     }])
-    .controller("contactController", ["$scope", function($scope) {
-        $scope.message = "contact";
+    .controller('contactController', ['$scope', function($scope) {
+        $scope.message = 'contact';
     }])
 ;
