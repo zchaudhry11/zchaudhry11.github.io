@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Zia Chaudhry Portfolio</title>
+<html lang="en" ng-app="portfolio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Zia Chaudhry Portfolio</title>
 
-<!-- Google fonts -->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 
-<!-- bootstrap -->
-<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 
-<!-- animate.css -->
-<link rel="stylesheet" href="assets/animate/animate.css" />
-<link rel="stylesheet" href="assets/animate/set.css" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="assets/animate/animate.css" />
+    <link rel="stylesheet" href="assets/animate/set.css" />
 
-<!-- gallery -->
-<link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+    <!-- gallery -->
+    <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
 
-<!-- favicon -->
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
-<link rel="stylesheet" href="assets/style.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <!-- AngularJS 1.5.5-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="js/angular/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+  </head>
 
-</head>
+  <body>
+    <!-- Top Lines -->
+    <div class="topbar animated bounceInLeft"></div>
 
-<body>
-<!-- Top Lines -->
-<div class="topbar animated bounceInLeft"></div>
-
-<!-- Header Starts -->
-<div class="navbar-wrapper">
+    <!-- Header Starts -->
+    <div class="navbar-wrapper">
       <div class="container">
         <div class="navbar navbar-inverse navbar-fixed-top animated rubberBand" role="navigation" id="top-nav">
           <div class="container">
@@ -51,10 +57,10 @@
             <!-- Navigation Bar Starts -->
             <div class="navbar-collapse  collapse">
               <ul class="nav navbar-nav navbar-right scroll">
-                 <!-- <li class="active wowload swing center" style="visibility: visible; animation-iteration-count: 1; animation-name: swing;"><a href="#home">Home</a></li> -->
-                 <li ><a href="index.html">Home</a></li>
-                 <li ><a href="portfolio.html">Projects</a></li>
-                 <li ><a href="contact.html">Contact</a></li>
+                <!-- <li class="active wowload swing center" style="visibility: visible; animation-iteration-count: 1; animation-name: swing;"><a href="#home">Home</a></li> -->
+                <li ><a href="#">Home</a></li>
+                <li ><a href="#portfolio">Projects</a></li>
+                <li ><a href="#contact">Contact</a></li>
               </ul>
             </div>
             <!-- Navigation Bar Ends -->
@@ -62,46 +68,37 @@
         </div>
       </div>
     </div>
-<!-- Header Ends -->
-
-<br><br><br><br><br><br><br><br><br>
-
-<!-- Intro Starts -->
-<div id="projects"  class="container spacer projects">
-  <div class="row">
-  <div class="col-sm-6 wowload fadeInLeft">
-    <h4><i class="fa fa-camera-retro"></i>Introduction</h4>
-    <p>My name is <strong>Zia</strong> and I am a software developer and technology enthusiast. I have experience developing web applications, games, and data-driven software. You can see more details about my projects on my résumé and GitHub.</p>
-    
+    <!-- Header Ends -->
+  <div ng-controller="landingController">
+    <!-- Intro Starts -->
+    <div id="projects"  class="container spacer projects">
+      {{message}}
+    </div>
+    <!-- Intro Ends -->
   </div>
-  <div class="col-sm-6 wowload fadeInRight">
-  <h4><i class="fa fa-coffee"></i>Education</h4>
-  <p>I will graduate from <strong>Rutgers University</strong> in May 2017 with a B.A. in <strong>Information Technology and Informatics</strong> and a minor in <strong>Computer Science.</strong> Some technologies I am familiar with include: <strong>C#, HTML5, CSS3, JavaScript, JQuery, AngularJS, Java, Python, and SQL.</strong> Overall, I am very passionate about technology and I am always looking for new ways to challenge my skills to grow as a developer.</p>
-  </div>
+  
+  <div ng-view class="view-animate">
+    {{"ngView: " + message}}
   </div>
 
-</div>
-<!-- Intro Ends -->
+    <!-- Footer Starts -->
+    <div class="footer spacer animated fadeInUp"></div>
+    <!-- Footer Ends -->
 
-<!-- Footer Starts -->
-<div class="footer spacer animated fadeInUp"></div>
-<!-- Footer Ends -->
+    <!-- jquery -->
+    <script src="assets/jquery.js"></script>
 
-<!-- jquery -->
-<script src="assets/jquery.js"></script>
+    <!-- wow script -->
+    <script src="assets/wow/wow.min.js"></script>
 
-<!-- wow script -->
-<script src="assets/wow/wow.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
 
-<!-- boostrap -->
-<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
+    <!-- jquery mobile -->
+    <script src="assets/mobile/touchSwipe.min.js"></script>
+    <script src="assets/respond/respond.js"></script>
 
-<!-- jquery mobile -->
-<script src="assets/mobile/touchSwipe.min.js"></script>
-<script src="assets/respond/respond.js"></script>
-
-<!-- gallery -->
-<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
-
-</body>
+    <!-- gallery -->
+    <script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
+  </body>
 </html>

@@ -63,6 +63,10 @@ p{font-size:1em;line-height: 1.7em; margin-bottom: 1.7em;}
 #home{padding-top: 6em;}
 
 /*Projects*/
+#projects {
+	padding-top: 350px;
+}
+
 .projects.spacer{padding-left: 4em; padding-right: 4em;padding-bottom: 0;}
 #projDetails {
 	font-size: 75%;
