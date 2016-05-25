@@ -1,5 +1,5 @@
 angular.module("portfolio", ["portfolio.controllers", "ngRoute"])
-    .config(["$routeProvider", "$locationProvider", function config($routeProvider, $locationProvider) {
+    .config(function($routeProvider) {
         $routeProvider
             .when("/portfolio", {
                 templateUrl: "portfolio.html",
@@ -9,5 +9,4 @@ angular.module("portfolio", ["portfolio.controllers", "ngRoute"])
                 templateUrl: "contact.html",
                 controller: "contactController"
             });
-    }])
-;
+    })
