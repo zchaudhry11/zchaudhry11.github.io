@@ -73,13 +73,18 @@
       </div>
     </div>
     <!-- Header Ends -->
-    
-    <!-- Partials Start -->
-    <div ng-controller="landingController">
-      <div ng-view=""></div>
-    </div>
-    <!-- Partials End -->
-    
+  <div ng-controller="landingController">
+    <!-- Intro Starts -->
+<div ng-view=""></div>
+    <hr />
+    <br><br><br><br><br><br><br>
+    <pre>$location.path() = {{main.$location.path()}}</pre>
+    <pre>$route.current.templateUrl = {{main.$route.current.templateUrl}}</pre>
+    <pre>$route.current.params = {{main.$route.current.params}}</pre>
+    <pre>$routeParams = {{main.$routeParams}}</pre>
+    <!-- Intro Ends -->
+  </div>
+
     <!-- Footer Starts -->
     <div class="footer spacer animated fadeInUp"></div>
     <!-- Footer Ends -->
