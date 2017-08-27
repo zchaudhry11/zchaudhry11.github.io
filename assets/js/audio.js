@@ -14,7 +14,7 @@ $(document).ready(function () {
         clearTimeout(timer);
         timer = setTimeout(function(){
             playHoverLink();
-        }, 300)
+        }, 400)
     });
 });
 

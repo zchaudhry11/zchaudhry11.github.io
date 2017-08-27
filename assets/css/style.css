@@ -13,7 +13,6 @@ body{
   margin: 0;
   font-family: helvetica, sans-serif;
   background-color: #d1cdb7;
-  box-shadow: 0 0 150px rgba(0,0,0,0.7) inset;
 }
 
 a, a:hover, a:active, a:visited {
@@ -33,6 +32,7 @@ h1 {
 
 #centerHeading {
   text-align: center;
+  padding-top: 2%;
 }
 
 #projectHeading {
@@ -41,7 +41,7 @@ h1 {
 }
 
 .title {
-  padding-bottom: 3%;
+  padding-bottom: 1%;
 }
 
 /* CARDS */
@@ -49,6 +49,7 @@ h1 {
   width: 90%;
   margin: 0 auto;
   max-width: 80rem;
+  padding-top: 1%;
 }
 
 .cols{
@@ -64,8 +65,8 @@ h1 {
 
 .projectTile, .artTile
 {
-  width:380px;
-  height:380px;
+  width:350px;
+  height:350px;
   margin:10px;
   display:inline-block;
   background-size:cover;
@@ -172,7 +173,7 @@ h1 {
 }
 
 #leftArrow {
-  position: absolute;
+  position: fixed;
   float: left;
   left: 5%;
   top: 50%;
@@ -181,7 +182,7 @@ h1 {
 }
 
 #rightArrow {
-  position: absolute;
+  position: fixed;
   float: right;
   right: 5%;
   top: 50%;
@@ -396,4 +397,17 @@ h1 {
   margin-right: 10px;
   border-radius: 5px;
   counter-increment: carousel-cell;
+}
+
+.audio {
+  visibility: hidden;
+}
+
+.vignette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 150px rgba(0,0,0,0.9) inset;
 }
