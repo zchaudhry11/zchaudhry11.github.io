@@ -26,21 +26,16 @@ h1 {
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  text-shadow: 0.3rem 0.3rem 0 #bab5a1;
+  text-shadow: 0.2rem 0.2rem 0 #bab5a1;
   text-align: center;
 }
 
 #centerHeading {
   text-align: center;
-  padding-top: 2%;
-}
-
-#projectHeading {
-  text-align: center;
-  padding-top: 10px;
 }
 
 .title {
+  padding-top: 1%;
   padding-bottom: 1%;
 }
 
