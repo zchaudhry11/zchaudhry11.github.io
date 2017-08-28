@@ -396,7 +396,7 @@ h1 {
 
 @media (max-width: 800px) {
   .carousel-cell {
-    height: 200px;
+    height: auto;
   }
 }
 

@@ -78,7 +78,7 @@ function generateContent(tileNum) {
 		//imagesLoaded: true,
 		accessibility: true,
 		draggable: true,
-		setGallarySize: false
+		setGallarySize: true
 	  });
 
 	switch(tileNum) {
