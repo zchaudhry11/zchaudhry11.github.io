@@ -394,6 +394,12 @@ h1 {
   counter-increment: carousel-cell;
 }
 
+@media (max-width: 800px) {
+  .carousel-cell {
+    height: 200px;
+  }
+}
+
 .audio {
   visibility: hidden;
 }
