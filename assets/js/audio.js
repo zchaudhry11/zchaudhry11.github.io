@@ -10,7 +10,35 @@ $(document).ready(function () {
 		playHoverTile();
     });
     
-    $("a").mouseover(function() {
+    $("#contacts .resume").mouseover(function() {
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+            playHoverLink();
+        }, 400)
+    });
+
+    $("#contacts .email").mouseover(function() {
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+            playHoverLink();
+        }, 400)
+    });
+
+    $("#contacts .phone").mouseover(function() {
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+            playHoverLink();
+        }, 400)
+    });
+
+    $("#contacts .github").mouseover(function() {
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+            playHoverLink();
+        }, 400)
+    });
+
+    $("#contacts .linkedin").mouseover(function() {
         clearTimeout(timer);
         timer = setTimeout(function(){
             playHoverLink();
