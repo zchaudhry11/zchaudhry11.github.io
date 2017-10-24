@@ -4,8 +4,8 @@ const effectDelay = 150;
 let currPage = 0;
 
 $(document).ready(function () {
-    randomTextEffect('.name');
-    randomTextEffect('.projectType');
+    //randomTextEffect('.name');
+    //randomTextEffect('.projectType');
 });
 
 /**
@@ -62,7 +62,7 @@ function getRandChar() {
 function updateProjType(projType) {
     // Update heading
     $('.projectType').text(projType);
-    randomTextEffect('.projectType');
+    //randomTextEffect('.projectType');
 
     // Animate tiles out
     if (projType == 'Artworks') {
@@ -113,7 +113,7 @@ function updateProjType(projType) {
  * Changes the page of the card content. Page 0 is projects, Page 1 is artwork, Page 2 is contact information
  */
 function changePage(direction) {
-    playArrowClick();
+    //playArrowClick();
 
     // Cycle through pages based on which arrow is clicked
     currPage += direction;

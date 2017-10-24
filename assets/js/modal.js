@@ -8,7 +8,7 @@ $(document).ready(function () {
 });
 
 function getExpandedContent(tileNum) {
-	playSelectClick();
+	//playSelectClick();
 	
 	currTile = tileNum; // Set selected tile
 
@@ -45,11 +45,11 @@ function disableTiles() {
  * Sets tiles to default state.
  */
 function resetTiles() {
-	playReturnClick();
+	//playReturnClick(); // play sound clip
 
 	// Reset project heading and arrows
 	$('.projectType').toggleClass('inactive');
-	randomTextEffect('.projectType');
+	//randomTextEffect('.projectType');
 	$('#leftArrow').toggleClass('inactive');
 	$('#rightArrow').toggleClass('inactive');
 
@@ -114,7 +114,7 @@ function generateContent(tileNum) {
 			$('.carousel').flickity('append', $cellElems);
 			break;
 		case 3:
-			$('.carousel').show();
+			$('.carousel').hide();
 			$('.content .title').text('Auxo Garden');
 			$('.content .technologies').text('NodeJS, ExpressJS, Sequelize, SQL Server 2016, AWS EC2');
 			$('.content .description').text('Auxo Garden is an internet of things device designed to get beginners into gardening and promote sustainability. I created the backend which processes data obtained from a soil sensor and feeds the result into a hybrid mobile application created with Ionic 2. The OpenWeatherMap API is used to retrieve weather information for a user who can input the location of their garden and receive suggestions for plants that they can grow in their current location.');	
@@ -205,6 +205,7 @@ function generateContent(tileNum) {
 	}
 	$('.expanded-content').toggleClass('inactive');
 
+	/*
 	// Add sound to carousel clicks
 	$(".flickity-prev-next-button").click(function() {
 		playArrowClick();
@@ -213,4 +214,5 @@ function generateContent(tileNum) {
 	$(".dot").click(function() {
 		playArrowClick();
 	});
+	*/
 }

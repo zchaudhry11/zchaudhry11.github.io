@@ -281,6 +281,7 @@ h1 {
   font-family: helvetica, sans-serif;
   font-weight: lighter;
   font-style: italic;
+  font-size: 1.25em;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   text-shadow: 0.1rem 0.1rem 0 #bab5a1;
@@ -289,7 +290,7 @@ h1 {
 
 .content span {
   font-family: helvetica, sans-serif;
-  font-size: 1.17em;
+  font-size: 1em;
   font-weight: lighter;
   letter-spacing: 0.1rem;
   text-shadow: 0.1rem 0.1rem 0 #bab5a1;
