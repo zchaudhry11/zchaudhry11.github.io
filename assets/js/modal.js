@@ -200,6 +200,13 @@ function generateContent(tileNum) {
 			$('.content .description').html('<img style=\"width:50%;height:50%;\" class=\"carousel-cell\" src=\"assets/images/artworks/mat2.jpg\" />');
 			$('.content .link').text("");
 			break;
+		case 11:
+			$('.carousel').hide();
+			$('.content .title').text("");
+			$('.content .technologies').text("");
+			$('.content .description').html('<img style=\"width:50%;height:50%;\" class=\"carousel-cell\" src=\"assets/images/artworks/road.jpg\" />');
+			$('.content .link').text("");
+			break;
 		default:
 		break;
 	}
