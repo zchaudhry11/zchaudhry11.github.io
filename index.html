@@ -6,173 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Zia Chaudhry Portfolio</title>
 
-  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
-  <link type="text/css" rel="stylesheet" href="assets/css/animate/animate.min.css" />
-  <link type="text/css" rel="stylesheet" href="assets/css/hover/hover.css" />
-  <link type="text/css" rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-  <script src="https://use.fontawesome.com/a78f229c8c.js"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="assets/js/audio.js"></script>
-  <script src="assets/js/site.js"></script>
-  <script src="assets/js/modal.js"></script>
+
+
+  <!-- <script src="assets/js/site.js"></script> -->
 </head>
 
 <div class="vignette"></div>
 
 <body>
-  <div class="container-fluid">
-    <!--HEADING-->
-    <div class="title">
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4" id="centerHeading">
-          <h1 class="name animated fadeInDown">Zia Chaudhry</h1>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-    </div>
 
-    <!--PROJECT TYPE HEADING-->
-    <h1 class="projectType animated fadeInUp">Projects</h1>
-
-    <!--PROJECTS-->
-    <div class="wrapper" id="projects">
-      <div class="cols">
-        <div class="projectTile hvr-radial-out animated zoomIn" onclick="getExpandedContent(1)">
-          <img style="width:210%;" src='assets/images/projects/gamelogger/gl-thumb.jpg' />
-          <div class="text">
-            <h1>GameLogger</h1>
-          </div>
-        </div>
-        <div class="projectTile hvr-radial-out animated zoomIn" onclick="getExpandedContent(2)">
-          <img src='assets/images/projects/hl2b/hl2b-thumb.jpg' />
-          <div class="text">
-            <h1>How Long To Beat Scraper</h1>
-          </div>
-        </div>
-        <div class="projectTile hvr-radial-out animated zoomIn" onclick="getExpandedContent(3)">
-          <img src='assets/images/projects/auxo/auxo-thumb.jpg' />
-          <div class="text">
-            <h1>Auxo Garden</h1>
-          </div>
-        </div>
-      </div>
-      <div class="cols">
-        <div class="projectTile hvr-radial-out animated zoomIn" onclick="getExpandedContent(4)">
-          <img src='assets/images/projects/ph/ph-thumb.jpg' />
-          <div class="text">
-            <h1>Playable Hallway</h1>
-          </div>
-        </div>
-        <div class="projectTile hvr-radial-out animated zoomIn" onclick="getExpandedContent(5)">
-          <img style="width:125%;" src='assets/images/projects/hs/hs-thumb.jpg' />
-          <div class="text">
-            <h1>Hungry Samurai</h1>
-          </div>
-        </div>
-        <div class="projectTile hvr-radial-out animated zoomIn" onclick="getExpandedContent(6)">
-          <img src='assets/images/projects/bvr/bvr-thumb.jpg' />
-          <div class="text">
-            <h1>&nbsp;&nbsp;Batting VR</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--ART-->
-    <div class="wrapper inactive" id="artworks">
-      <div class="cols">
-        <div class="artTile hvr-radial-out animated zoomIn inactive" onclick="getExpandedContent(7)">
-          <img src='assets/images/artworks/sword.jpg' />
-        </div>
-        <div class="artTile hvr-radial-out animated zoomIn inactive" onclick="getExpandedContent(8)">
-          <img src='assets/images/artworks/dagger.jpg' />
-        </div>
-        <div class="artTile hvr-radial-out animated zoomIn inactive" onclick="getExpandedContent(9)">
-          <img src='assets/images/artworks/mat1.jpg' />
-        </div>
-        <div class="artTile hvr-radial-out animated zoomIn inactive" onclick="getExpandedContent(10)">
-          <img src='assets/images/artworks/mat2.jpg' />
-        </div>
-        <div class="artTile hvr-radial-out animated zoomIn inactive" onclick="getExpandedContent(11)">
-          <img src='assets/images/artworks/road.jpg' />
-        </div>
-      </div>
-    </div>
-
-    <!--CONTACTS-->
-    <div class="wrapper inactive" id="contacts">
-      <div class="col">
-        <div class="row" id="contactInfo">
-          <a href="https://drive.google.com/open?id=12tfwjOUC5mRzz_yWQIxNgLB6Kz1LmdRZ" target="_blank" class="delayed hvr-shutter-out-horizontal animated fadeIn inactive">
-              <span class="resume">Résumé</span>
-              <p></p>
-          </a>
-          <br>
-          <a href="mailto:ziachaudhry11@gmail.com" class="delayed hvr-shutter-out-horizontal animated fadeIn inactive">
-              <span class="email">E-mail: </span>
-              <p>ziachaudhry11@gmail.com</p>
-          </a>
-          <br>
-          <span class="delayed hvr-shutter-out-horizontal animated fadeIn inactive">
-              <span class="phone">Phone #: </span>
-              <p class="phone">908-324-6362</p>
-          </span>
-          <br>
-          <a href="http://github.com/zchaudhry11" target="_blank" class="delayed hvr-shutter-out-horizontal animated fadeIn inactive">
-              <span class="github">GitHub: </span>
-              <p>github.com/zchaudhry11</p>
-          </a>
-          <br>
-          <a href="http://www.linkedin.com/in/zia-chaudhry" target="_blank" class="delayed hvr-shutter-out-horizontal animated fadeIn inactive">
-              <span class="linkedin">LinkedIn: </span>
-              <p>linkedin.com/in/zia-chaudhry</p>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!--ARROWS-->
-    <i class="fa fa-chevron-left hvr-icon-back animated fadeInRight" id="leftArrow" onclick="changePage(-1)" aria-hidden="true"></i>
-    <i class="fa fa-chevron-right hvr-icon-forward animated fadeInLeft" id="rightArrow" onclick="changePage(1)" aria-hidden="true"></i>
-
-    <!--EXPANDED TILE CONTENT-->
-    <div class="expanded-content">
-      <div class="content hvr-underline-from-center animated fadeInUp">
-        <h2 class="title"></h2>
-      </div>
-      <br>
-      <div class="carousel animated fadeInLeft"></div>
-      <div class="blank">&nbsp;</div>
-      <div class="content animated fadeInDown">
-        <h3 class="technologies"></h3>
-      </div>
-      <br><br>
-      <div class="content animated fadeInUp">
-        <span class="description"></span>
-        <br /><br />
-        <a class="link hvr-underline-from-center animated fadeInUp" href="" target="_blank"></a>
-      </div>
-      <div class="blank">&nbsp;</div>
-      <br>
-      <button class="full animated fadeIn" id="returnBtn" onclick="resetTiles()">Return</button>
-    </div>
-  </div>
-
-  <!--AUDIO-->
-  <div class="audio">
-      <audio id="link" src="assets/audio/link.wav" autostart="false" ></audio>
-      <audio id="selectTile" src="assets/audio/selectTile.wav" autostart="false" ></audio>
-      <audio id="arrow" src="assets/audio/arrow.wav" autostart="false" ></audio>
-      <audio id="return" src="assets/audio/return.wav" autostart="false" ></audio>
-      <audio id="hoverTile" src="assets/audio/hoverTile.wav" autostart="false" ></audio>
-      <audio id="hoverLink" src="assets/audio/hoverLink.wav" autostart="false" ></audio>
-  </div>
 </body>
 
 </html>
