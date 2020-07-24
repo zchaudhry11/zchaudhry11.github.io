@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/zchaudhry11.github.io/static/css/main.5f361e03.chunk.css",
+    "main.js": "/zchaudhry11.github.io/static/js/main.c4f14ada.chunk.js",
+    "main.js.map": "/zchaudhry11.github.io/static/js/main.c4f14ada.chunk.js.map",
+    "runtime-main.js": "/zchaudhry11.github.io/static/js/runtime-main.6b982637.js",
+    "runtime-main.js.map": "/zchaudhry11.github.io/static/js/runtime-main.6b982637.js.map",
+    "static/js/2.4c736102.chunk.js": "/zchaudhry11.github.io/static/js/2.4c736102.chunk.js",
+    "static/js/2.4c736102.chunk.js.map": "/zchaudhry11.github.io/static/js/2.4c736102.chunk.js.map",
+    "index.html": "/zchaudhry11.github.io/index.html",
+    "precache-manifest.b85ac9080601836f9639f03120d0aa93.js": "/zchaudhry11.github.io/precache-manifest.b85ac9080601836f9639f03120d0aa93.js",
+    "service-worker.js": "/zchaudhry11.github.io/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/zchaudhry11.github.io/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.4c736102.chunk.js.LICENSE.txt": "/zchaudhry11.github.io/static/js/2.4c736102.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/zchaudhry11.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b982637.js",
+    "static/js/2.4c736102.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.c4f14ada.chunk.js"
+  ]
+}
