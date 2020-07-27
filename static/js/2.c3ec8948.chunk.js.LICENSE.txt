@@ -4,6 +4,19 @@ object-assign
 @license MIT
 */
 
+/*!
+       * Platform.js <https://mths.be/platform>
+       * Copyright 2014-2018 Benjamin Tan <https://bnjmnt4n.now.sh/>
+       * Copyright 2011-2013 John-David Dalton <http://allyoucanleet.com/>
+       * Available under MIT license <https://mths.be/mit>
+       */
+
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
 /** @license React v0.19.1
  * scheduler.production.min.js
  *
