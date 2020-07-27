@@ -110,33 +110,33 @@ export default class App extends Component {
             tech = "C#, HTMLAgilityPack";
             desc =
               "HowLongToBeat.com is a website that tracks how long it takes people to complete specific games. I wrote a scraper in C# that gets all of this data for every game on the website and outputs a .csv file for further processing.";
-            link = "http://github.com/zchaudhry11/HowLongToBeat-DataScraper";
+            link = "https://github.com/zchaudhry11/HowLongToBeat-DataScraper";
             break;
           case 1:
             pictures = [bvr1, bvr2, bvr3];
             tech = "C#, Unity3D, VRTK, HTC Vive, 3D Studio Max, Photoshop";
             desc =
               "Batting VR is a small virtual reality demo I made with C# and Unity3D. I specifically targeted the HTC Vive but the demo is built on top of VRTK so it should work fine with other VR HMDs such as the Oculus Rift. The player is able to pick up a bat and hit the baseballs that are launched in their direction.";
-            link = "http://github.com/zchaudhry11/BattingVR";
+            link = "https://github.com/zchaudhry11/BattingVR";
             break;
           case 2:
             pictures = [cjs1, cjs2, cjs3];
             tech = "HTML, CSS, TypeScript, React, Redux, Howler, AnimeJS, Azure";
             desc = "CytusJS is a browser remake of the popular mobile game Cytus 2 built entirely in plain React.";
-            link = "http://www.cytusjs.com";
+            link = "https://www.cytusjs.com";
             break;
           case 3:
             pictures = [gl1, gl2, gl3];
             tech = "HTML, CSS, JavaScript, Bootstrap, Highcharts, C#, ASP.NET MVC, ASP.NET Identity, Entity Framework, SQL Server, Azure";
             desc =
               "Gamelogger is a management platform that allows users to track statistics and get notifications about their game libraries. ASP.NET Identity and OAuth 2.0 are used to securely register users and the Steam and IGDB APIs are used to aggregate every game owned by the user. The Twilio API is used to provide users with text message notifications about their games and there is also notification integration with Google Calendar";
-            link = "http://gamelogger.us";
+            link = "https://gamelogger.us";
             break;
           case 4:
             pictures = [hs1, hs2, hs3];
             tech = "C#, Unity3D, Photoshop, Spriter";
             desc = "Hungry Samurai is a 2.5D action game built with C# and Unity3D.";
-            link = "http://github.com/zchaudhry11/HungrySamurai";
+            link = "https://github.com/zchaudhry11/HungrySamurai";
             break;
           default:
             break;
@@ -235,14 +235,14 @@ export default class App extends Component {
             </a>
           </span>
           <span>
-            <a href="http://github.com/zchaudhry11" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/zchaudhry11" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
           </span>
           <span>E-mail: ziachaudhry11@gmail.com</span>
           <span>Phone: 908-324-6362</span>
           <span>
-            <a href="http://www.linkedin.com/in/zia-chaudhry" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/zia-chaudhry" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </span>
