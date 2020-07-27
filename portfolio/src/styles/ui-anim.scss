@@ -1,0 +1,157 @@
+@import "ui-const.scss";
+
+.drop-in-top {
+  animation: drop-in-top 1s, fade-in 2s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes drop-in-top {
+  0% {
+    padding-bottom: 100%;
+    pointer-events: none;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    padding-bottom: 0;
+    pointer-events: initial;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fade-out 1s ease-in-out 1;
+  opacity: 0;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.brighten-borders {
+  animation: brighten-borders 2.5s linear infinite;
+}
+
+@keyframes brighten-borders {
+  0% {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.diamond-top {
+  animation: diamond-top 1s ease-in-out 1;
+}
+
+@keyframes diamond-top {
+  0% {
+    top: -80%;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    top: 0;
+    pointer-events: initial;
+    opacity: 1;
+  }
+}
+
+.diamond-left {
+  animation: diamond-left 1s ease-in-out 1;
+}
+
+@keyframes diamond-left {
+  0% {
+    left: -30%;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    left: 0;
+    pointer-events: initial;
+    opacity: 1;
+  }
+}
+
+.diamond-right {
+  animation: diamond-right 1s ease-in-out 1;
+}
+
+@keyframes diamond-right {
+  0% {
+    left: 130%;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    left: 100%;
+    pointer-events: initial;
+    opacity: 1;
+  }
+}
+
+.diamond-bottom {
+  animation: diamond-bottom 1s ease-in-out 1;
+}
+
+@keyframes diamond-bottom {
+  0% {
+    bottom: -80%;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    bottom: 0;
+    pointer-events: initial;
+    opacity: 1;
+  }
+}
+
+.grow {
+  animation: grow 1s ease-in-out 1 !important;
+}
+
+@keyframes grow {
+  0% {
+    pointer-events: none;
+    opacity: 1;
+    transform: scale(1) rotate(45deg);
+  }
+  100% {
+    pointer-events: none;
+    opacity: 0.01;
+    transform: scale(2) rotateZ(720deg);
+  }
+}
