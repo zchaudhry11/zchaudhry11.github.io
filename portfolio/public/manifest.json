@@ -3,6 +3,7 @@
   "name": "Zia Chaudhry Portfolio",
   "start_url": ".",
   "display": "standalone",
+  "orientation": "landscape",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }

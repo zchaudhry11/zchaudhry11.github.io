@@ -79,6 +79,26 @@
   }
 }
 
+.diamond-tip {
+  animation: diamond-tip 1s ease-in-out 1;
+}
+
+@keyframes diamond-tip {
+  0% {
+    top: 350%;
+    pointer-events: none;
+    opacity: 0.1;
+  }
+  99% {
+    pointer-events: none;
+  }
+  100% {
+    top: 195%;
+    pointer-events: initial;
+    opacity: 1;
+  }
+}
+
 .diamond-left {
   animation: diamond-left 1s ease-in-out 1;
 }

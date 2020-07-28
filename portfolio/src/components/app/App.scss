@@ -147,6 +147,11 @@
       top: 0;
       left: 100%;
     }
+
+    ul li.item6 {
+      top: 195%;
+      left: 50%;
+    }
   }
 
   .project {
@@ -159,8 +164,10 @@
     font-size: 1.5rem;
     color: $white;
     text-shadow: 0px 4px 2px rgba($black, 0.5);
-    overflow-y: scroll;
     padding-top: 30px;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 45% 25% 10%;
 
     .technologies {
       padding-top: 10px;
@@ -168,10 +175,6 @@
       span:nth-of-type(1) {
         display: block;
       }
-    }
-
-    .description {
-      padding-top: 25px;
     }
   }
 
@@ -181,7 +184,8 @@
     font-size: 1.5rem;
     color: $white;
     text-shadow: 0px 4px 2px rgba($black, 0.5);
-    
+    padding-top: 15%;
+
     span {
       display: block;
       padding: 10px;
@@ -198,17 +202,162 @@
   }
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-
 .carousel {
-  max-width:900px;
-  max-height:500px;
+  max-width: 900px;
+  max-height: 500px;
   margin: auto;
 }
 
-.slide img{
+.slide img {
   min-height: 500px;
+}
+
+// iPhone 5/6/7/8
+@media only screen and (max-device-width: 736px) and (max-device-height: 414px) and (orientation: landscape) {
+  .content-base {
+    .content-active {
+      transform: scale(0.5);
+
+      .project-title {
+        opacity: 1;
+      }
+    }
+
+    .project {
+      font-size: 0.7rem;
+      grid-template-rows: 35% 10% 50%;
+    }
+
+    .contact {
+      padding-top: 0;
+    }
+  }
+
+  .carousel {
+    max-width: 225px;
+    max-height: 125px;
+  }
+
+  .slide img {
+    min-height: 125px;
+    min-width: 125px;
+  }
+}
+
+// Pixel 2 and other similar sized Android phones
+@media only screen and (max-device-width: 823px) and (max-device-height: 411px) and (orientation: landscape) {
+  .content-base {
+    .content-active {
+      transform: scale(0.5);
+
+      .project-title {
+        opacity: 1;
+      }
+    }
+
+    .project {
+      font-size: 0.7rem;
+      grid-template-rows: 35% 10% 45%;
+    }
+
+    .contact {
+      padding-top: 0;
+    }
+  }
+
+  .carousel {
+    max-width: 225px;
+    max-height: 125px;
+  }
+
+  .slide img {
+    min-height: 125px;
+    min-width: 125px;
+  }
+}
+
+// Tablets
+@media (min-width: 1024px) and (max-device-height: 1024px) {
+  .content-base {
+    .content-active {
+      .project-title {
+        opacity: 1;
+      }
+    }
+
+    .project {
+      font-size: 1rem;
+      grid-template-rows: 35% 15% 20%;
+    }
+  }
+
+  .carousel {
+    max-width: 450px;
+    max-height: 250px;
+  }
+
+  .slide img {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 1024px) and (max-device-height: 1366px) {
+  .content-base {
+    .content-active {
+      .project-title {
+        opacity: 1;
+      }
+    }
+
+    .project {
+      grid-template-rows: 35% 15% 15%;
+    }
+  }
+}
+
+// 720p
+@media (min-width: 1280px) and (max-device-height: 720px) {
+  .content-base {
+    .project {
+      font-size: 1rem;
+      grid-template-rows: 35% 15% 20%;
+    }
+  }
+
+  .carousel {
+    max-width: 450px;
+    max-height: 250px;
+  }
+
+  .slide img {
+    min-height: 250px;
+  }
+}
+
+// 1440p
+@media (min-width: 2560px) {
+  .content-base {
+    .project {
+      grid-template-rows: 40% 10% 15%;
+    }
+  }
+}
+
+// 1440p Ultrawide
+@media (min-width: 3440px) {
+  .content-base {
+    .project {
+      grid-template-rows: 40% 10% 15%;
+    }
+  }
+}
+
+// 4K
+@media (min-width: 3840px) {
+  .content-base {
+    .project {
+      font-size: 3rem;
+      grid-template-rows: 25% 10% 20%;
+    }
+  }
 }

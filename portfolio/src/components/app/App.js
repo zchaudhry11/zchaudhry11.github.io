@@ -12,9 +12,9 @@ import hl2b1 from "../../assets/img/hl2b/hl2b1.jpg";
 import hl2b2 from "../../assets/img/hl2b/hl2b2.jpg";
 import hl2b3 from "../../assets/img/hl2b/hl2b3.jpg";
 
-// import ph1 from "../../assets/img/ph/ph1.jpg";
-// import ph2 from "../../assets/img/ph/ph2.jpg";
-// import ph3 from "../../assets/img/ph/ph3.jpg";
+import ph1 from "../../assets/img/ph/ph1.jpg";
+import ph2 from "../../assets/img/ph/ph2.jpg";
+import ph3 from "../../assets/img/ph/ph3.jpg";
 
 import bvr1 from "../../assets/img/bvr/bvr1.jpg";
 import bvr2 from "../../assets/img/bvr/bvr2.jpg";
@@ -34,8 +34,15 @@ import hs3 from "../../assets/img/hs/hs3.jpg";
 
 const BRIGHT_BORDER_DURATION = 1000;
 const GROW_DURATION = 1000;
-const BASE_CLASSES = ["item1 diamond-left", "item2 diamond-bottom", "item3 diamond-top", "item4 diamond-bottom", "item5 diamond-right"];
-const BORDER_CLASSES = ["item1 brighten-borders", "item2 brighten-borders", "item3 brighten-borders", "item4 brighten-borders", "item5 brighten-borders"];
+const BASE_CLASSES = ["item1 diamond-left", "item2 diamond-bottom", "item3 diamond-top", "item4 diamond-bottom", "item5 diamond-right", "item6 diamond-tip"];
+const BORDER_CLASSES = [
+  "item1 brighten-borders",
+  "item2 brighten-borders",
+  "item3 brighten-borders",
+  "item4 brighten-borders",
+  "item5 brighten-borders",
+  "item6 brighten-borders"
+];
 
 export default class App extends Component {
   constructor(props) {
@@ -138,6 +145,12 @@ export default class App extends Component {
             desc = "Hungry Samurai is a 2.5D action game built with C# and Unity3D.";
             link = "https://github.com/zchaudhry11/HungrySamurai";
             break;
+          case 5:
+            pictures = [ph1, ph2, ph3];
+            tech = "C#, Unity3D, 3D Studio Max, Maya, Photoshop";
+            desc = "Playable Hallway is a first-person horror adventure game built with C# and Unity3D that was inspired by the popular games P.T. and Cry of Fear.";
+            link = "https://github.com/zchaudhry11/PlayableHallway-public";
+            break;
           default:
             break;
         }
@@ -159,9 +172,12 @@ export default class App extends Component {
     let contactClasses = `contact drop-in-top ${this.state.changedCategory ? "fade-out" : ""}`;
     let projectClasses = `project drop-in-top ${this.state.activeCategory === 1 ? "noselect" : ""} ${this.state.changedCategory ? "fade-out" : ""}`;
 
+    // Tilt crashes on mobile devices so just remove it on mobile
+    let isMobileDevice = typeof window.orientation !== "undefined" || navigator.userAgent.indexOf("IEMobile") !== -1;
+
     const tiltSettings = {
       speed: 300,
-      scale: 1.1,
+      scale: 1.05,
       reverse: false,
       shine: false,
       reset: true
@@ -196,8 +212,41 @@ export default class App extends Component {
     );
     if (this.state.activeCategory === 1) {
       if (this.state.selectedProject <= -1) {
-        activeContent = (
-          <ReactTilt settings={tiltSettings} className="tilted">
+        if (!isMobileDevice) {
+          activeContent = (
+            <ReactTilt settings={tiltSettings} className="tilted">
+              <div className={contentClasses}>
+                <ul>
+                  <li className={this.state.projectClasses[0]} onClick={() => this.handleProjectChange(0)}>
+                    <img src={hl2b1} alt="" />
+                    <span className="project-title">HowLongToBeat Scraper</span>
+                  </li>
+                  <li className={this.state.projectClasses[1]} onClick={() => this.handleProjectChange(1)}>
+                    <img src={bvr3} alt="" />
+                    <span className="project-title">Batting VR</span>
+                  </li>
+                  <li className={this.state.projectClasses[2]} onClick={() => this.handleProjectChange(2)}>
+                    <img src={cjs3} alt="" />
+                    <span className="project-title">CytusJS</span>
+                  </li>
+                  <li className={this.state.projectClasses[3]} onClick={() => this.handleProjectChange(3)}>
+                    <img src={gl1} alt="" />
+                    <span className="project-title">Gamelogger</span>
+                  </li>
+                  <li className={this.state.projectClasses[4]} onClick={() => this.handleProjectChange(4)}>
+                    <img src={hs1} alt="" />
+                    <span className="project-title">Hungry Samurai</span>
+                  </li>
+                  <li className={this.state.projectClasses[5]} onClick={() => this.handleProjectChange(5)}>
+                    <img src={ph2} alt="" />
+                    <span className="project-title">Playable Hallway</span>
+                  </li>
+                </ul>
+              </div>
+            </ReactTilt>
+          );
+        } else {
+          activeContent = (
             <div className={contentClasses}>
               <ul>
                 <li className={this.state.projectClasses[0]} onClick={() => this.handleProjectChange(0)}>
@@ -220,15 +269,19 @@ export default class App extends Component {
                   <img src={hs1} alt="" />
                   <span className="project-title">Hungry Samurai</span>
                 </li>
+                <li className={this.state.projectClasses[5]} onClick={() => this.handleProjectChange(5)}>
+                  <img src={ph2} alt="" />
+                  <span className="project-title">Playable Hallway</span>
+                </li>
               </ul>
             </div>
-          </ReactTilt>
-        );
+          );
+        }
       }
     } else {
       activeContent = (
         <div className={contactClasses}>
-          <span>Contact</span>
+          <span>Contact Info</span>
           <span>
             <a href="https://drive.google.com/file/d/1aps5sKoREBxnShqjGlU0yfABNFkEASww/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               Résumé
